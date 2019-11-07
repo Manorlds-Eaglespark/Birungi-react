@@ -1,0 +1,77 @@
+export const GetAllProductsConstants = {
+    GET_ALL_PRODUCTS_SUCCESS: 'GET_ALL_PRODUCTS_SUCCESS',
+    GET_ALL_PRODUCTS_FAIL: 'GET_ALL_PRODUCTS_FAIL',
+  };
+  
+  export const GetAllCategoryConstants = {
+    GET_ALL_CATEGORIES_SUCCESS: 'GET_ALL_CATEGORIES_SUCCESS',
+    GET_ALL_CATEGORIES_FAIL: 'GET_ALL_CATEGORIES_FAIL',
+  };
+  
+  export const GetSearcheItemsConstants = {
+    GET_SEARCH_ITEMS_SUCCESS: 'GET_SEARCH_ITEMS_SUCCESS',
+    GET_SEARCH_ITEMS_FAIL: 'GET_SEARCH_ITEMS_FAIL',
+  };
+  
+  export const GetProductCategoryConstants = {
+    GET_PRODUCT_CATEGORY_SUCCESS: 'GET_PRODUCT_CATEGORY_SUCCESS',
+    GET_PRODUCT_CATEGORY_FAIL: 'GET_PRODUCT_CATEGORY_FAIL',
+  };
+  
+    
+  export const GetProductDetailConstants = {
+    GET_PRODUCT_DETAIL_SUCCESS: 'GET_PRODUCT_DETAIL_SUCCESS',
+    GET_PRODUCT_DETAIL_FAIL: 'GET_PRODUCT_DETAIL_FAIL',
+  };
+
+  // LOCAL_HOST: 'https://birungi.herokuapp.com',
+  export const GetBaseUrl = {
+    HOST: 'http://127.0.0.1:5000'
+  }
+  
+  export const LoginConstants = {
+    RESET_LOADER: 'RESET_LOADER',
+    LOGIN_USER_SUCCESS: 'LOGIN_USER_SUCCESS',
+    LOGIN_USER_FAILED: 'LOGIN_USER_FAILED',
+    USER_IS_LOGGING_IN: 'USER_IS_LOGGING_IN',
+  };
+
+  export const CreateShopConstants = {
+    CREATE_SHOP_SUCCESS: 'CREATE_SHOP_SUCCESS',
+    CREATE_SHOP_FAILED: 'CREATE_SHOP_FAILED'
+  };
+
+  export const GetDetailsConstants = {
+    GET_SHOP_DETAIL_SUCCESS: 'GET_SHOP_DETAIL_SUCCESS',
+    GET_SHOP_DETAIL_FAILED: 'GET_SHOP_DETAIL_FAILED'
+  };
+
+  export const EditShopConstants = {
+    EDIT_SHOP_DETAIL_SUCCESS: 'EDIT_SHOP_DETAIL_SUCCESS',
+    EDIT_SHOP_DETAIL_FAILED: 'EDIT_SHOP_DETAIL_FAILED'
+  };
+
+  export const DeleteShopConstants = {
+    DELETE_SHOP_SUCCESS: 'DELETE_SHOP_SUCCESS',
+    DELETE_SHOP_FAILED: 'DELETE_SHOP_FAILED'
+  };
+
+  export const CreateCategoryConstants = {
+    CREATE_CATEGORY_SUCCESS: 'CREATE_CATEGORY_SUCCESS',
+    CREATE_CATEGORY_FAILED: 'CREATE_CATEGORY_FAILED'
+  };
+
+  export const CreateProductConstants = {
+    CREATE_PRODUCT_SUCCESS: 'CREATE_PRODUCT_SUCCESS',
+    CREATE_PRODUCT_FAILED: 'CREATE_PRODUCT_FAILED'
+  };
+
+  export const RegisterConstants = {
+    REGISTER_SUCCESS: 'REGISTER_SUCCESS',
+    REGISTER_FAILED: 'REGISTER_FAILED'
+  };
+
+  export const DeleteCategoryConstants = {
+    DELETE_CATEGORY_SUCCESS: 'DELETE_CATEGORY_SUCCESS',
+    DELETE_CATEGORY_FAILED: 'DELETE_CATEGORY_FAILED'
+  };
