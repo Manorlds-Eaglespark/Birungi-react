@@ -6,7 +6,7 @@ export default function Footer() {
         <div>
         <br /> &nbsp;
         <br />
-            <div className="footer">Birungi Store &copy; 2019</div>
+            <div className="footer">Birungi Store &copy; 2020</div>
         </div>
     )
 }

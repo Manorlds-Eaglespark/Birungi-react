@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { GetProductCategoryConstants, GetBaseUrl } from '../actions/actionTypes';
 
-const apiUrl = GetBaseUrl.HOST + 'https://birungi.herokuapp.com/api/v1/categories/';
+const apiUrl = GetBaseUrl.HOST + '/api/v1/categories/';
 const apiUrl_2 = '/products';
 
 const getCategoryAction = (category_id) => dispatch => axios.get(apiUrl + category_id + apiUrl_2, {

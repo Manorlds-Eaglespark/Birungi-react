@@ -8,7 +8,7 @@ import filterImage from '../assets/images/filter.png'
 import getAllProductsAction from '../actions/getAllProductsAction';
 import ProductsComponent from './common/products';
 import SearchComponent from './common/search';
-import InfoComponent from './infoComponent'
+import InfoComponent from '../components/common/infoComponent'
 
 class ProductComponent extends Component {
 

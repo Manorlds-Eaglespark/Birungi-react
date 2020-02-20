@@ -7,6 +7,7 @@ import getProductDetailReducer from '../reducers/getProductDetailReducer';
 import loginReducer from '../reducers/loginReducer';
 import createShopReducer from '../reducers/createShopReducer';
 import getShopDetailReducer from '../reducers/getShopDetailReducer';
+import getAllShopProductsReducer from '../reducers/getShopProductsReducer';
 
 export default combineReducers({
     getAllProductsReducer,
@@ -17,4 +18,5 @@ export default combineReducers({
     loginReducer,
     createShopReducer,
     getShopDetailReducer,
+    getAllShopProductsReducer,
 });

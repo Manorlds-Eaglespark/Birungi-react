@@ -4,7 +4,7 @@ import '../../assets/css/styles.css'
 
 const WhyBirungi  = () => (
     <div className="content-container">
-    <div className="category-header"><strong>Birungi,</strong> <i>Let Your Beauty Shine</i></div>
+    <div className="category-header"><i>Let Beauty Shine</i></div>
     <br/>
         <div className="center-item">
             <img src={banner} alt="" className="banner-image" />

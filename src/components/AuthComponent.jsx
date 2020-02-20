@@ -38,7 +38,7 @@ export default class ControlPanel extends Component {
             <div>
                 <div className="content-container">
                     <ul> 
-                        <li><button className="categoryButton" onClick={e => this.logInUser()} > Login </button></li>
+                        <li><button className="categoryButton" onClick={e => this.logInUser()} > Login </button> &nbsp; </li>
                         <li><button className="categoryButton" onClick={e => this.registerUser()} > Register </button></li>
                         </ul>
                     <hr className="lightseagreen-background"/>

@@ -1,7 +1,6 @@
 import axios from 'axios';
 import { toast } from 'react-toastify';
 import { RegisterConstants, GetBaseUrl } from '../../src/actions/actionTypes';
-import history from '../utils/history';
 import {toastSuccess, toastFailure} from '../utils/toast'
 
 const apiUrl = GetBaseUrl.HOST + '/api/v1/user/register';

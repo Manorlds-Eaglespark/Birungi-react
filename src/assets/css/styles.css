@@ -6,6 +6,45 @@ body{
   background-color: white;
   vertical-align:middle;
 }
+.imagesButton{
+  background-color: white;
+}
+
+
+button{
+  cursor: pointer;
+}
+
+.order-box{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  flex-flow: center;
+  align-items: center;
+  align-content:center;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin: 14px;
+}
+.order-box-item{
+  flex: auto;
+  align-self: auto;
+  margin: 14px;
+}
+
+.product-admin-card{
+  margin: 0 auto;
+  background-color: white;
+  width: calc(25%);
+  float:left;
+  margin: auto;
+  border-radius: 7px;
+  display: block;
+  margin: 7px;
+  padding: 7px;
+  text-align: center;
+}
+
 
 .modal-input{
   padding-left: 14px;
@@ -50,6 +89,10 @@ body{
   line-height: 10px;
 }
 
+.horizontal-spacing{
+  width: 100%;
+}
+
 .login_button {
   background-color: #0f97d0;
   padding-left: 17.5px;
@@ -75,12 +118,6 @@ button {
   font-size: larger;
 }
 
-hr {
-  height: 1px;
-  background-color: whitesmoke !important;
-  border: 0 none;
-  }
-
 .searchIcon {
   padding: 0.5rem;
 }
@@ -99,7 +136,7 @@ input[type=search],
 input[type=password],
 select {
     border-radius: 3.5px;
-    width: 91%;
+    width: 98%;
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
@@ -130,7 +167,7 @@ input[type=search]:focus {
   background-color: #e5e5e5;
   text-align: center;
   padding-top: 0.5%;
-  position: fixed;
+  position: relative;
   bottom: 0px;
   z-index: 1000;
   width: 100%;
@@ -155,8 +192,8 @@ input[type=search]:focus {
 }
 
 .padding-space{
-  padding-left: 14%;
-  padding-right: 14%;
+  padding-left: 3.5%;
+  padding-right: 3.5%;
 }
 
 .full-width{
@@ -182,6 +219,7 @@ input[type=search]:focus {
 .banner-image{
   width: 100%;
   height: auto;
+  border-radius: 7px;
 }
 
 .product-categories{
@@ -234,7 +272,7 @@ input[type=search]:focus {
 .category-image{
   width: auto;
   vertical-align: middle;
-  border-radius: 50%;
+  border-radius: 15%;
   height: 100px;
   width: 100px;
 }
@@ -255,17 +293,18 @@ input[type=search]:focus {
 
 .product-section{
   width: 100%;
-  text-align: center;
-  display:block;
-  text-align: center;
-  margin-bottom: 14%;
+  display: flex;
+  flex-flow: wrap;
+  justify-content:center;
+  align-items: flex-end;
+  margin-bottom: 2%;
 }
 
 .product-card{
   margin: 0 auto;
   background-color: white;
-  width:20%;
-  width: calc(17%);
+  width:25%;
+  width: calc(22%);
   float:left;
   margin: auto;
   border-radius: 7px;
@@ -320,10 +359,18 @@ input[type=search]:focus {
   text-decoration: none;
 }
 
-.product-image{
+.slide-product-image{
   width: auto;
   max-width: 100%;
-  height: 200px;
+  max-height: 250px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.product-image{
+  width: auto;
+  height: auto;
+  max-height: 200px;
   text-align: center;
   margin: 0 auto;
 }
@@ -358,7 +405,7 @@ input[type=search]:focus {
 }
 
 .content-container{
-  width: 84%;
+  width: 91%;
   height: auto;
   margin: 0 auto !important;
   text-align: center;
@@ -383,7 +430,7 @@ input[type=search]:focus {
 }
 
 .category-header{
-  text-align: right;
+  text-align: left;
   font-size: small;
   color: #ffa600;
   font-weight: lighter;
@@ -583,22 +630,20 @@ th, td {
 }
 
 .quantity{
-  display: inline-flex;
-  width: 100%;
-  max-width: 100%;
-  margin: 0 auto !important;
-  text-align: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex-flow: center;
+  align-items: center;
+  align-content:center;
   border: 1px slategray;
 }
-.quantity p{
-  float:left;
-  border: 1px #333;
+.quantity-item{
+  flex: auto;
+  align-self: auto;
+  margin: 14px;
 }
-.quantity button{
-  float:left;
-  border-radius: 5px;
-  background: whitesmoke;
-}
+
 .add-to-cart-button{
   border-radius: 5px;
   background: lightseagreen;
@@ -660,7 +705,7 @@ ol > li
 
 
 .slide-container{
-  width: 70%;
+  width: 84%;
   margin: 0 auto !important;
   padding: 14px;
 }
@@ -720,18 +765,20 @@ ol > li
   color: red;
 }
 
+
 .red-background{
-  background-color: red !important;
+  clear: both;
+  border-color: red !important;
 }
 .yellow-background{
-  background-color: yellow !important;
+  border-color: yellow !important;
 }
 .black-background{
-  background-color: #333 !important;
+  border-color: #333 !important;
 }
-
 .lightseagreen-background{
-  background-color: lightseagreen !important;
+  border-color: lightseagreen !important;
+  color: lightseagreen !important;
 }
 
 .create_new_header{
@@ -864,7 +911,7 @@ span.psw {
 @media only screen and (max-width: 600px) {
   .navbar{ padding-top: 10.5px; padding-bottom: 7px;}
   .logo { font-size: large; }
-  .padding-space{ padding-left: 1%; padding-right: 1%; }
+  .padding-space{ padding-left: 0.5%; padding-right: 0.5%; }
   .disappear-small {display: none;}
   .nav-element {width: 15%; float:left; margin-right: 25px; text-align: center;}
   .nav-brand {width: 55%; float:left; margin-right: 0rem; text-align: center;}
@@ -884,8 +931,8 @@ span.psw {
   .brother-b { width: 100%; height: auto; text-align: center; margin: 0 auto !important; float: none; overflow: hidden; }
   .brother-b img{ width: 100%; height: auto; margin: 0 auto !important; }
   .brother-a img{float:left; max-width: 45px;}
-  .imagesButton{float: left;}
-  .detailImage{ height: 250px !important; width: auto; }
+  .imagesButton{float: left; background-color: white;}
+  .detailImage{ height: 250px !important; width: auto !important; }
   .one_part{width: 100%;}
   .product-detail-title{
     font-weight: bolder;
@@ -924,6 +971,7 @@ span.psw {
   .quantity button{
     float:left;
     border-radius: 5px;
+    cursor: pointer;
     background: whitesmoke;
   }
   .add-to-cart-button{

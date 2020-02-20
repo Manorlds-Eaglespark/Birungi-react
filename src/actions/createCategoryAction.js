@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { toast } from 'react-toastify';
 import { CreateCategoryConstants, GetBaseUrl } from '../../src/actions/actionTypes';
-import {toastSuccess, toastFailure} from '../utils/toast'
+import {toastSuccess} from '../utils/toast'
 
 const apiUrl = GetBaseUrl.HOST + '/api/v1/admin/categories';
 

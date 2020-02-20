@@ -24,9 +24,9 @@ export const GetAllProductsConstants = {
     GET_PRODUCT_DETAIL_FAIL: 'GET_PRODUCT_DETAIL_FAIL',
   };
 
-  // LOCAL_HOST: 'https://birungi.herokuapp.com',
+  // LOCAL_HOST: 'https://birungi.herokuapp.com', 'http://127.0.0.1:5000'
   export const GetBaseUrl = {
-    HOST: 'http://127.0.0.1:5000'
+    HOST: 'https://birungi.herokuapp.com'
   }
   
   export const LoginConstants = {
@@ -74,4 +74,26 @@ export const GetAllProductsConstants = {
   export const DeleteCategoryConstants = {
     DELETE_CATEGORY_SUCCESS: 'DELETE_CATEGORY_SUCCESS',
     DELETE_CATEGORY_FAILED: 'DELETE_CATEGORY_FAILED'
+  };
+
+  export const EditCategoryConstants = {
+    EDIT_CATEGORY_SUCCESS: 'EDIT_CATEGORY_SUCCESS',
+    EDIT_CATEGORY_FAILED: 'EDIT_CATEGORY_FAILED'
+  };
+
+
+  export const GetAllShopProductsConstants = {
+    GET_ALL_SHOP_PRODUCTS_SUCCESS: 'GET_ALL_SHOP_PRODUCTS_SUCCESS',
+    GET_ALL_SHOP_PRODUCTS_FAILED: 'GET_ALL_SHOP_PRODUCTS_FAILED'
+  };
+
+
+  export const DeleteProductConstants = {
+    DELETE_PRODUCT_SUCCESS: 'DELETE_PRODUCT_SUCCESS',
+    DELETE_PRODUCT_FAILED: 'DELETE_PRODUCT_FAILED'
+  };
+
+  export const EditProductConstants = {
+    EDIT_PRODUCT_SUCCESS: 'EDIT_PRODUCT_SUCCESS',
+    EDIT_PRODUCT_FAILED: 'EDIT_PRODUCT_FAILED'
   };

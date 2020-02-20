@@ -25,14 +25,14 @@ export const Slideshow = ({products}) => {
         return (
                 <div className="each-fade slide-card" key={product.id}>
                     <div className="image-container slide-card-item">
-                        <img className="product-image" src={product.images.length === 0 ? '':product.images[0].url} alt="" />
+                        <img className="slide-product-image" src={product.image_1_url} alt="" />
                     </div>  
                     <div className="slide-card-item slide-text-length">
                         <div className="slide-info-container">
                         
                             <div className="slide-info product-card-brand">
                                 { product.brand ?  product.brand : ''}
-                                <hr />
+                                <hr className="lightseagreen-background"/>
                             </div>
                             <div className="slide-info">
                                 {shorten_text(product.name)}

@@ -1,11 +1,11 @@
 import axios from 'axios';
 import { toast } from 'react-toastify';
-import { CreateProductConstants, GetBaseUrl } from '../../src/actions/actionTypes';
-import {toastSuccess, toastFailure} from '../utils/toast'
+import { EditProductConstants, GetBaseUrl } from '../../src/actions/actionTypes';
+import {toastSuccess} from '../utils/toast'
 
-const apiUrl = GetBaseUrl.HOST + '/api/v1/admin/products';
+const apiUrl = GetBaseUrl.HOST + '/api/v1/admin/products/';
 
-const createProductAction = productData => dispatch => axios.post(apiUrl, productData, {
+const editProductAction = (productData, id) => dispatch => axios.put(apiUrl+id, productData, {
     headers: {
         'Content-Type': 'multipart/form-data',
         "Authorization": `${sessionStorage.getItem('token')}`,
@@ -13,9 +13,8 @@ const createProductAction = productData => dispatch => axios.post(apiUrl, produc
     },
   })
   .then((response) => {
-    console.log(response);
     dispatch({
-      type: CreateProductConstants.CREATE_PRODUCT_SUCCESS,
+      type: EditProductConstants.EDIT_PRODUCT_SUCCESS,
       payload: response.data,
     });
     toast.dismiss();
@@ -24,11 +23,10 @@ const createProductAction = productData => dispatch => axios.post(apiUrl, produc
   })
   .catch((error) => {
     dispatch({
-      type: CreateProductConstants.CREATE_PRODUCT_FAILED,
+      type: EditProductConstants.EDIT_PRODUCT_FAILED,
       payload: error.response,
     });
     toast.dismiss();
-    toastFailure("Product dtail failed to save.", 'A');
   });
 
-export default createProductAction;
+export default editProductAction;
